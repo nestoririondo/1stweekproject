@@ -44,6 +44,19 @@ main {
 #about {
     margin: 0 auto;
 }
+header {
+    background-image: url(./images/bgk-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid yellow;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    height: 670px;
+    width: 100vw; 
+    gap: 200px  ;  
+
+}
 .about__story {
     display: flex;
     align-items: flex-start; /*aligns items to the top of the container */
@@ -199,4 +212,91 @@ button:active {
     line-height: 1.8;
     color: #333333;
 }
+.logo {
+    height: 30px;
+    width: 30px;
+}
+nav {
+    width: 100%;
+    padding: 20px 50px 0 50px;
+    display: flex;
+    justify-content: end;
+    
+    
+    
+}
+.nav-left {
+    display: flex;
+    width: 25%;
+    height: 20%;
+    gap: 20px;
+    
 
+}
+.nav-right {
+    width: 75%;
+    height: 20%;
+}
+.nav-right .nav-list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 30px;
+
+}
+.nav-items a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-items a:hover {
+    color: turquoise;
+    transition: 0.2s;
+}
+.nav-left .logo , a {
+    font-family: 'Roboto', sans-serif;
+    color: turquoise;
+    font-size: 30px;
+    font-weight: 100;
+    
+}
+#hero {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.divider {
+    width: 7%;
+    margin: 20px auto;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.h1-light {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    
+}
+.info-light {
+    color: #928e8e;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    padding: 0 150px;
+}
+
+#hero button {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    margin: 30px 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
