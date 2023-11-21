@@ -54,8 +54,7 @@ header {
     align-items: center;
     height: 670px;
     width: 100vw; 
-    gap: 200px  ;  
-
+    gap: 200px;  
 }
 
 .logo {
@@ -68,6 +67,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 auto;
 }
 .nav-left {
     display: flex;
