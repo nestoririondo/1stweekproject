@@ -64,18 +64,16 @@ header {
 }
 nav {
     width: 960px;
-    padding: 20px 50px 0 50px;
+    padding: 20px 10px 0 10px;
     display: flex;
-    justify-content: end;
-    
+    justify-content: space-between;
+    align-items: baseline;
 }
 .nav-left {
     display: flex;
     width: 25%;
     height: 20%;
     gap: 20px;
-    
-
 }
 .nav-right {
     width: 75%;
@@ -111,7 +109,6 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 .divider {
     width: 50px;
@@ -125,11 +122,12 @@ nav {
     
 }
 .info-light {
-    color: #928e8e;
+    color: #fff;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
     line-height: 1.8;
-    padding: 0 150px;
+    padding: 0 9%;
+    text-align: center;
 }
 
 #hero button {
@@ -160,7 +158,7 @@ nav {
 
 .about__story__logo {
     /* border: 2px solid blue; */
-    padding: 0px 10px;
+    padding: 10px 10px;
     flex: 1 1 200px;
     max-width: 250px;
     min-width: 200px;
@@ -361,4 +359,9 @@ button:active {
     width: 220px;
     height: 220px;
     background-color: #fff;
+}
+@media screen and (max-width: 960px) {
+    .nav-right {
+        display: none;
+    }
 }
