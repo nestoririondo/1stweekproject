@@ -114,7 +114,7 @@ nav {
     
 }
 .divider {
-    width: 7%;
+    width: 50px;
     margin: 20px auto;
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -164,6 +164,7 @@ nav {
     flex: 1 1 200px;
     max-width: 250px;
     min-width: 200px;
+    margin-left: 60px;
 }
 
 
@@ -238,7 +239,7 @@ button:active {
 
 #expertise,
 #team {
-    margin: 20px auto;
+    margin: 40px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -318,7 +319,7 @@ button:active {
 
 #team h2 {
     color: #fff;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 #team > h3 {
     color: #f9f9f9;
