@@ -58,15 +58,15 @@ header {
 }
 
 .logo {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 }
 nav {
     width: 960px;
     padding: 20px 10px 0 10px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     margin: 0 auto;
 }
 .nav-left {
@@ -74,6 +74,7 @@ nav {
     width: 25%;
     height: 20%;
     gap: 20px;
+    align-items: center;
 }
 .nav-right {
     width: 75%;
