@@ -41,9 +41,7 @@ main {
     background-color: #fff;
 }
 
-#about {
-    margin: 0 auto;
-}
+
 header {
     background-image: url(./images/bgk-header.png);
     background-repeat: no-repeat;
@@ -54,7 +52,7 @@ header {
     align-items: center;
     height: 670px;
     width: 100vw; 
-    gap: 200px;  
+    gap: 20%;  
 }
 
 .logo {
@@ -62,7 +60,8 @@ header {
     width: 50px;
 }
 nav {
-    width: 960px;
+    width: 100%;
+    max-width: 960px;
     padding: 20px 10px 0 10px;
     display: flex;
     justify-content: space-between;
@@ -84,14 +83,15 @@ nav {
     display: flex;
     justify-content: flex-end;
     list-style: none;
-    gap: 30px;
-
+    gap: 25px;
 }
 .nav-items a {
     color: white;
     font-size: 16px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+
 }
 .nav-items a:hover {
     color: turquoise;
@@ -144,6 +144,9 @@ nav {
     text-transform: uppercase;
 }
 
+#about {
+    margin: 0 auto;
+}
 .about__story {
     display: flex;
     align-items: flex-start; /*aligns items to the top of the container */
@@ -361,7 +364,118 @@ button:active {
     height: 220px;
     background-color: #fff;
 }
-@media screen and (max-width: 960px) {
+#contact {
+    margin: 60px auto;
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: baseline;
+}
+
+.contact__left {
+    flex: 2 1 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.contact__left input,
+.contact__left textarea {
+    width: 100%;
+    margin: 10px;
+    padding: 0 10px;
+}
+
+.contact__left input {
+    height: 40px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+}
+.contact__left textarea {
+    height: 200px;
+    border: 1px solid #ebebeb;
+    border-radius: 2px;
+    padding: 10px
+}
+.contact__left h2,
+.contact__right h2,
+.contact__left button {
+    margin: 10px;
+    text-transform: uppercase;
+}
+
+.contact__left button {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 2px;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.contact__right {
+    flex: 1 0 40%;
+    margin: 0 auto;
+    max-width: 90%;
+
+}
+.contact__right__brands {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 30px 10px;
+    gap: 30px;
+}
+
+.brand1 {
+    width: 160px;
+}
+
+.brand2 {
+    width: 138px;
+    height: auto;
+}
+.brand3 {
+    width: 154px;
+    height: 41px;
+}
+.brand4 {
+    width: 140px;
+    height: 21px;
+}
+.brand5 {
+    width: 150px;
+    height: 24px;
+}
+.brand6 {
+    width: 95px;
+    height: 34px;
+}
+.brand7 {
+    width: 113px;
+    height: 69px;
+}
+.brand8 {
+    width: 114px;
+    height: 56px;
+}
+.brand9 {
+    width: 109px;
+    height: 53px;
+}
+.brand10 {
+    width: 130px;
+    height: 70px;
+}
+
+
+
+
+
+@media screen and (max-width: 780px) {
     .nav-right {
         display: none;
     }
