@@ -47,7 +47,7 @@ main {
 .about__story {
     display: flex;
     align-items: flex-start; /*aligns items to the top of the container */
-    gap: 50px;
+    gap: 80px;
     margin: 0 auto;
     padding: 50px 10px;
     flex-wrap: wrap;
@@ -60,16 +60,15 @@ main {
 .about__story__logo {
     border: 2px solid blue;
     padding: 0px 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
     min-width: 200px;
-    /* flex: 0 0 auto; */
 }
 
-.about__story__logo img { 
-    /* width: 235px; */
-}
+
 .about__story__text {
     border: 2px solid green;
-    flex: 1 0 50%; /*will take remaining space and shrink to 50% of the container */
+    flex: 1 0 50%; /*will take remaining space and flex-basis to 50% of the container */
 }
 .about__story__text * {
     padding: 0 10px;
@@ -139,7 +138,6 @@ button:active {
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 30px 10px;
     /* border: 2px solid red; */
@@ -150,25 +148,25 @@ button:active {
 }
 #team > h3 {
     font-family: 'Playfair Display', serif;
-    font-size: 12px;
+    font-size: 16px;
     margin-top: 10px;
     color: #333333;
     font-weight: 300;
-
 }
 #team hr {
-    width: 40px;
-    color: #c8c5ca;
-    margin: 20px;
+    width: 50px;
+    color: #ebebeb;
+    margin: 20px 0 50px 0;
 }
-
 
 .team__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1px;
     margin-top: 20px;
     width: 100%;
+    background-color: #ebebeb;
+
 }
 
 .team__container__item {
@@ -176,7 +174,8 @@ button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
+    background-color: #fff;
 }
 .team__container__item > * {
     margin-bottom: 30px;
@@ -191,6 +190,7 @@ button:active {
     font-size: .875rem;
     font-weight: 700;
     margin-bottom: 10px;
+    white-space: nowrap;
 }
 .team__container__item p {
     font-size: .875rem;
