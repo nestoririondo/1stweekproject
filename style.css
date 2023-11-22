@@ -5,6 +5,7 @@
 }
 html {
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -505,7 +506,9 @@ button:active {
 
 .dropdown-content a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .dropdown:hover .dropbtn {background-color: var(--secondary-color);}
 
@@ -519,3 +522,4 @@ button:active {
 
     }
 }
+
