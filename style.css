@@ -380,7 +380,7 @@ button:active {
     flex-direction: column;
     margin: 0 auto;
     max-width: 90%;
-    padding: 0 10px;
+    padding: 0 5px;
 }
 .contact__left input,
 .contact__left textarea {
@@ -534,14 +534,12 @@ footer {
 .footer__row1__column2 {
     flex: 1 5 300px;
     padding: 10px;
-    margin: 45px auto 0 auto;
-    align-self: center;
+    margin: 50px auto 0 auto;
     display: grid;
     gap: 20px;
     justify-content: center;
     line-height: 1.5;
     max-width: 90%;
-
 }
 .footer__row1__column2 h3,
 .footer__row1__column3 h3 {
@@ -570,7 +568,7 @@ footer {
 .footer__row1__column3 {
     flex: 1;
     min-width: 300px;
-    margin: 52px auto 0 auto;
+    margin: 50px auto 0 auto;
     padding: 10px;
     display: grid;
     max-width: 90%;
@@ -578,7 +576,7 @@ footer {
 }
 .footer-subscribe {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     gap: 10px;
     width: 100%;
 }
@@ -592,7 +590,6 @@ footer {
 }
 .footer__row1__column3 button {
     background-image: url(./images/png/paper122.png);
-    /* background image semi-transparent */
     background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-position: center;
