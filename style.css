@@ -492,11 +492,10 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto;
     max-width: 960px;
-    gap: 25px;
+    gap: 15px;
 }
 .footer__row1__column1 {
     flex: 1 0 300px;
-    /* min-width: 300px; */
     margin: 30px auto 0 auto;
     padding: 10px;
     color: #fff;
@@ -505,6 +504,7 @@ footer {
     gap: 20px;
     justify-content: center;
     max-width: 90%;
+
 }
 
 .footer__row1__column1 img {
@@ -536,8 +536,9 @@ footer {
     display: grid;
     gap: 20px;
     justify-content: center;
-    max-width: 90%;
     line-height: 1.5;
+    max-width: 90%;
+
 }
 .footer__row1__column2 h3,
 .footer__row1__column3 h3 {
@@ -571,10 +572,11 @@ footer {
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    width: 100%;
 }
 .footer__row1__column3 input {
     height: 45px;   
-    width: 211px;
+    min-width: 200px;
     padding: 10px;
 }
 .footer__row1__column3 input:focus {
@@ -593,7 +595,7 @@ footer {
 
 .footer-socialmedia {
     display: flex;
-    gap: 5px;
+    gap: 10px;
 }
 .footer__row1__column3 img {
     width: 35px;
@@ -627,9 +629,9 @@ footer {
     transition: 0.2s;
 }
 .footer__row2__column1 {
-    align-self: flex-start;
     text-transform: uppercase;
     display: flex;
+    flex: 0 0 400px;
     gap: 50px;
     font-size: 16px;
     max-width: 90%;
@@ -690,8 +692,8 @@ footer {
     .dropdown {
         display: inline-block;
     }
-}
 
+}
 /* 
 
 align-items: aligns the items of a flex box horizontally in relation to the items
