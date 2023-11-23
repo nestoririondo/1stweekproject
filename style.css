@@ -100,7 +100,7 @@ nav {
 }
 .nav-left .logo , a {
     font-family: 'Roboto', sans-serif;
-    color: turquoise;
+    color: var(--secondary-color);
     font-size: 30px;
     font-weight: 100;
     
