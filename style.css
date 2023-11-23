@@ -45,7 +45,7 @@ main {
 
 header {
     background-image: linear-gradient(to right, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85)),
-    url(/images/bgk-header.png);
+    url(./images/bgk-header.png);
     background-repeat: no-repeat;
     background-size: cover;
     /* border: 2px solid yellow; */
@@ -213,7 +213,7 @@ button:active {
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(to right, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85)),
-    url(/images/bgk-middle.png);
+    url(./images/bgk-middle.png);
     background-position: center;   
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@ button:active {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to right, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85)),
-    url(/images/bgk-team.png);
+    url(./images/bgk-team.png);
     /* background-image: url(./images/bgk-team.png); */
     background-position: center;   
     background-repeat: no-repeat;
@@ -480,7 +480,7 @@ button:active {
 
 footer {
     background-image: linear-gradient(to right, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85)),
-    url(/images/bgk-footer.png);
+    url(./images/bgk-footer.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -586,7 +586,7 @@ footer {
     outline: none;
 }
 .footer__row1__column3 button {
-    background-image: url(/images/png/paper122.png);
+    background-image: url(./images/png/paper122.png);
     /* background image semi-transparent */
     background-color: rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
