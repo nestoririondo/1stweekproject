@@ -194,7 +194,7 @@ nav {
     padding: 10px 20px;
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
-    margin: 30px 10px;
+    margin: 30px 10px 20px 10px;
     cursor: pointer;
     text-transform: uppercase;
 }
@@ -556,16 +556,21 @@ footer {
     gap: 20px;
     color: #fff;
 }
-.footer-where img,
-.footer-telephone img {
+.footer-where img {
     width: 20px;
     height: auto;
+}
+
+.footer-telephone img {
+    width: 18px;
+    height: auto;
+    margin-right: -2px;
 }
 
 .footer__row1__column3 {
     flex: 1;
     min-width: 300px;
-    margin: 50px auto 0 auto;
+    margin: 52px auto 0 auto;
     padding: 10px;
     display: grid;
     max-width: 90%;
