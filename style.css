@@ -53,7 +53,7 @@ header {
     align-items: center;
     height: 670px;
     width: 100vw; 
-    gap: 20%;  
+    gap: 25%;  
 }
 
 .logo {
@@ -92,10 +92,11 @@ nav {
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     white-space: nowrap;
+    text-transform: uppercase;
 
 }
 .nav-items a:hover {
-    color: turquoise;
+    color: var(--secondary-color);
     transition: 0.2s;
 }
 .nav-left .logo , a {
@@ -162,17 +163,15 @@ nav {
 }
 
 .about__story__logo {
-    /* border: 2px solid blue; */
     padding: 10px 10px;
-    flex: 1 1 200px;
+    /* flex: 1 1 200px; */
     max-width: 250px;
-    min-width: 200px;
-    margin-left: 60px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 
 .about__story__text {
-    /* border: 2px solid green; */
     flex: 1 0 50%; /*will take remaining space and flex-basis to 50% of the container */
 }
 .about__story__text * {
@@ -314,6 +313,7 @@ button:active {
     flex-direction: column;
     background-image: linear-gradient(to right, rgba(9, 5, 47, .85), rgba(49, 29, 94, .85)),
     url(./images/bgk-team.png);
+    /* background-image: url(./images/bgk-team.png); */
     background-position: center;   
     background-repeat: no-repeat;
     background-size: cover;
@@ -380,11 +380,12 @@ button:active {
     flex-direction: column;
     margin: 0 auto;
     max-width: 90%;
+    padding: 0 10px;
 }
 .contact__left input,
 .contact__left textarea {
     width: 100%;
-    margin: 10px;
+    margin: 10px 0px;
     padding: 0 10px;
 }
 
@@ -399,10 +400,15 @@ button:active {
     border-radius: 2px;
     padding: 10px
 }
+.contact__left textarea:focus, 
+.contact__left input:focus {
+    outline: none;
+}
+
 .contact__left h2,
 .contact__right h2,
 .contact__left button {
-    margin: 10px;
+    margin: 10px 0px;
     text-transform: uppercase;
 }
 
@@ -414,20 +420,20 @@ button:active {
     padding: 10px 20px;
     border: 2px solid var(--secondary-color);
     border-radius: 2px;
-    margin: 10px 10px;
+    margin: 10px 0px;
     cursor: pointer;
 }
 .contact__right {
     flex: 1 0 40%;
     margin: 0 auto;
     max-width: 90%;
-
+    padding: 0 10px;
 }
 .contact__right__brands {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
-    margin: 30px 10px;
+    margin: 30px 0px;
     gap: 30px;
 }
 
@@ -502,6 +508,7 @@ button:active {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    text-transform: uppercase;
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
@@ -519,7 +526,13 @@ button:active {
     
     .dropdown {
         display: inline-block;
-
     }
 }
 
+/* 
+
+align-items: aligns the items of a flex box horizontally in relation to the items
+
+align-content: ... vertically in relation to the container (its like justify content but vertically, it need multiple rows to do something) 
+
+*/
