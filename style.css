@@ -144,7 +144,9 @@ nav {
     cursor: pointer;
     text-transform: uppercase;
 }
-
+#hero button:hover {
+    background: rgba(0, 225, 208, 0.1);
+}	
 #about {
     margin: 0 auto;
 }
@@ -201,6 +203,8 @@ nav {
 button:hover {
     transform: scale(0.99);
     transition: 0.1s;
+    background: rgba(0, 225, 208, 0.1);
+
 
 }
 button:active {
@@ -267,6 +271,7 @@ button:active {
     margin-top: 10px;
     color: #333333;
     font-weight: 300;
+    text-align: center;
 }
 #expertise hr,
 #team hr {
@@ -274,6 +279,7 @@ button:active {
     color: #ebebeb;
     margin: 20px 0 50px 0;
 }
+
 
 .expertise__container {
     display: grid;
@@ -387,6 +393,9 @@ button:active {
     color: #f3f3f3;
     padding-top: 70px;
 }
+#team button:hover {
+    background: rgba(0, 225, 208, 0.1);
+}
 .blank0,
 .blank1,
 .blank2,
@@ -481,6 +490,9 @@ button:active {
     border-radius: 2px;
     margin: 10px 0px;
     cursor: pointer;
+}
+.contact__left button:hover {
+    background: rgba(0, 225, 208, 0.1);
 }
 .contact__right {
     flex: 1 0 40%;
@@ -620,7 +632,7 @@ footer {
 .footer-telephone img {
     width: 18px;
     height: auto;
-    margin-right: -2px;
+    margin-right: -4px;
 }
 
 .footer__row1__column3 {
