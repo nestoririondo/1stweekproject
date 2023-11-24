@@ -284,6 +284,12 @@ button:active {
     padding: 30px;
     background-color: #fff;
 }
+
+/* expertise container item changes background color on hover  */
+.expertise__container__item:hover {
+    background-color: rgb(249, 249, 249);
+    transition: 0.2s;
+}
 .expertise__container__item > * {
     margin-bottom: 30px;
 }
@@ -507,7 +513,6 @@ footer {
     gap: 20px;
     justify-content: center;
     max-width: 90%;
-
 }
 
 .footer__row1__column1 img {
@@ -576,13 +581,13 @@ footer {
 }
 .footer-subscribe {
     display: flex;
-    /* align-items: flex-start; */
     gap: 10px;
     width: 100%;
 }
 .footer__row1__column3 input {
     height: 45px;   
     min-width: 200px;
+    max-width: 480px;
     padding: 10px;
 }
 .footer__row1__column3 input:focus {
@@ -603,8 +608,8 @@ footer {
     gap: 10px;
 }
 .footer__row1__column3 img {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
 }
 .footer__row1__column3 img:hover {
 /* make them more transparent */
@@ -639,10 +644,10 @@ footer {
     flex: 0 0 400px;
     gap: 50px;
     font-size: 16px;
-    max-width: 90%;
+    /* max-width: 90%; */
 }
 .footer__row2__column2 {
-    max-width: 90%;
+    /* max-width: 90%; */
 }
 .footer__row2 p {
     padding-bottom: 20px;  
@@ -697,10 +702,51 @@ footer {
     .dropdown {
         display: inline-block;
     }
-
 }
-/* 
+@media screen and (max-width: 930px) {
+    .footer__row1 {
+        flex-direction: column;
+    }
+    .footer__row1__column1 {
+        
+        flex: 1 0 0;
+    }
+    .footer__row1__column2 {
+        flex: 1 0 0;
+        display: block;
+        width: 100%; /* Add this line */
+    }
+    .footer__row1__column2 p {
+        width: 100%;
 
+    }
+    .footer__row1__column3 {
+        flex: 1 0 0;
+        width: 100%;
+    }
+    .footer__row1__column3 input {
+        flex: 1 0 0;
+        width: 100%;
+    }
+
+
+    .footer__row2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__row2__column1 {
+        flex: 0 0 0;
+}
+@media screen and (max-width: 860px) {
+    .contact__right__brands {
+        justify-items: flex-start;
+    }
+}
+    
+}
+
+
+/*
 align-items: aligns the items of a flex box horizontally in relation to the items
 
 align-content: ... vertically in relation to the container (its like justify content but vertically, it need multiple rows to do something) 
