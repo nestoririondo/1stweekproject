@@ -200,9 +200,13 @@ nav {
 }
 button:hover {
     transform: scale(0.99);
+    transition: 0.1s;
+
 }
 button:active {
     transform: scale(0.95);
+    transition: 0.1s;
+
 }
 
 #video {
@@ -234,9 +238,13 @@ button:active {
 }
 #video img:hover {
     transform: scale(0.99);
+    transition: 0.1s;
+
 }
 #video img:active {
     transform: scale(0.95);
+    transition: 0.1s;
+
 }
 
 #expertise,
@@ -269,7 +277,7 @@ button:active {
 
 .expertise__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
     gap: 1px;
     margin-top: 20px;
     width: 100%;
@@ -288,6 +296,10 @@ button:active {
 /* expertise container item changes background color on hover  */
 .expertise__container__item:hover {
     background-color: rgb(249, 249, 249);
+    transition: 0.2s;
+}
+.expertise__container__item:hover h3 {
+    transform: scale(1.1);
     transition: 0.2s;
 }
 .expertise__container__item > * {
@@ -349,7 +361,14 @@ button:active {
     cursor: pointer;
     border: 1px solid #8d839e;
 }
-.team__container h3,
+.team__container__item:hover {
+    border: 1px solid var(--secondary-color);
+    transition: 0.2s;
+}
+.team__container__item:hover h3 {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 .team__container p {
     padding: 10px;
 }
